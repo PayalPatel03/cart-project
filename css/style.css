@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand .fa-solid {
+    color: #0aad0a !important;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
