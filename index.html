@@ -34,26 +34,46 @@
 
                     <ul class="navbar-nav d-flex flex-row gap-3 ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-heart fs-4"></i>
-                            </a>
+                            <button class="btn"> <i class="fa-solid fa-heart fs-4"></i></button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-user-tie fs-4"></i>
-                            </a>
+                           <button class="btn"><i class="fa-solid fa-user-tie fs-4"></i></button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-bag-shopping fs-4"></i>
-                            </a>
+                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"> <i class="fa-solid fa-bag-shopping fs-4"></i></button>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+<!--O F F C A N V A S-->
 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title fw-bold ms-auto" id="offcanvasExampleLabel"><i class="fa-solid fa-cart-shopping fs-4"></i> Your Bag</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+   </div>
+    
+  </div>
+</div>
     <!--C A R D S-->
     <div class="container mt-5">
         <h2>Popular Products</h2>
@@ -71,7 +91,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$21.6  <strike class="text-secondary fs-4">$24</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
             </div>
@@ -90,7 +110,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$23.6  <strike class="text-secondary fs-4">$24</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -109,7 +129,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$35  <strike class="text-secondary fs-4">$40</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -128,7 +148,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$3  <strike class="text-secondary fs-4">$5</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -146,7 +166,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$11.7  <strike class="text-secondary fs-4">$18</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -164,7 +184,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$14.4  <strike class="text-secondary fs-4">$24</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -182,7 +202,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$20.4  <strike class="text-secondary fs-4">$24</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -200,7 +220,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$29.74  <strike class="text-secondary fs-4">$35</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -220,7 +240,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$10  <strike class="text-secondary fs-4">$15</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -239,7 +259,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$13.5  <strike class="text-secondary fs-4">$18</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -257,7 +277,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$13.5  <strike class="text-secondary fs-4">$18</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -276,16 +296,27 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$14.5  <strike class="text-secondary fs-4">$18</strike></span>
-                      <a href="#" class=" float-end fw-bold btn btn-success">+ADD</a>
+                    <button class="float-end fw-bold btn btn-success addToCartBtn">+ ADD</button>
                     </div>
                   </div>
               </div>
         </div>
     </div>
+    <!--Toasts-->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+              <strong class="me-auto fs-5"><i class="fa-solid fa-circle-check fs-4"></i>   Product updated to cart</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+         
+      </div>
+  </div>
+  
 
     <!-- P A G E-->
     <div class="container main">
-      <div class="row d-flex justify-content-between">
+      <div class="row d-flex justify-content-between align-items-center">
         <div class="col-md-3">
           <div class="card" style="width: 18rem;">
             <div class="card-body">
