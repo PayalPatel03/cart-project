@@ -41,7 +41,8 @@
                         </li>
                         <li class="nav-item">
                             <button class="btn cart-wrapper" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"> <i class="fa-solid fa-bag-shopping fs-4"></i>
-                              <span class="cart-badge" id="cart-badge">0</span></button>
+                              <span class="cart-badge" id="cart-badge">0</span>
+                              </button>
                            
                         </li>
                     </ul>
@@ -79,18 +80,15 @@
     
     
 <!--O F F C A N V A S-->
-
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title fw-bold " id="offcanvasExampleLabel">Shop Cart</h5>
-    
+    <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Shop Cart <span class="badge bg-secondary" id="cart-badge">0</span></h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="alert alert-danger" role="alert">
     You’ve got FREE delivery. Start checkout now!
   </div>
-  <div class="offcanvas-body">
-   
+  <div class="offcanvas-body" id="cart-list">
     
   </div>
 </div>
@@ -110,8 +108,8 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
-                    <span class="fs-4 fw-semibold p-3">$21.6  <strike class="text-secondary fs-4">$24</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <span class="fs-4 fw-semibold p-3">$21 <strike class="text-secondary fs-4">$24</strike></span>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Haldiram Sev Bhujia', 21 ,'./images/img1.jpg' )">+ ADD</button>
                     
                     </div>
                   </div>
@@ -130,8 +128,8 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
-                    <span class="fs-4 fw-semibold p-3">$23.6  <strike class="text-secondary fs-4">$24</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <span class="fs-4 fw-semibold p-3">$23  <strike class="text-secondary fs-4">$24</strike></span>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('NutriChoice Digestive', 23 ,'./images/biscuit.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -150,7 +148,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$35  <strike class="text-secondary fs-4">$40</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Cadbury 5 Star Chocolate', 35 ,'./images/fivestar.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -169,7 +167,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$3  <strike class="text-secondary fs-4">$5</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Onion Flavour Potato', 3 ,'./images/wafer.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -186,8 +184,8 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
-                    <span class="fs-4 fw-semibold p-3">$11.7  <strike class="text-secondary fs-4">$18</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <span class="fs-4 fw-semibold p-3">$11  <strike class="text-secondary fs-4">$18</strike></span>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Salted Instant Popcorn', 11 ,'./images/popcorn.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -204,8 +202,8 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
-                    <span class="fs-4 fw-semibold p-3">$14.4  <strike class="text-secondary fs-4">$24</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <span class="fs-4 fw-semibold p-3">$14  <strike class="text-secondary fs-4">$24</strike></span>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Blueberry Greek Yogurt', 14 ,'./images/bluberry.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -222,8 +220,8 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
-                    <span class="fs-4 fw-semibold p-3">$20.4  <strike class="text-secondary fs-4">$24</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <span class="fs-4 fw-semibold p-3">$20  <strike class="text-secondary fs-4">$24</strike></span>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Britannia Cheese Slices', 20 ,'./images/cheese.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -240,8 +238,8 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
-                    <span class="fs-4 fw-semibold p-3">$29.74  <strike class="text-secondary fs-4">$35</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <span class="fs-4 fw-semibold p-3">$29  <strike class="text-secondary fs-4">$35</strike></span>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Kelloggs Original Cereals', 29 ,'./images/corn.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -261,7 +259,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$10  <strike class="text-secondary fs-4">$15</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Slurrp Millet Chocolate', 10 ,'./images/millet.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -279,8 +277,8 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
-                    <span class="fs-4 fw-semibold p-3">$13.5  <strike class="text-secondary fs-4">$18</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <span class="fs-4 fw-semibold p-3">$13  <strike class="text-secondary fs-4">$18</strike></span>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Roast Ground Coffee', 13 ,'./images/coffee.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
@@ -297,15 +295,15 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
-                    <span class="fs-4 fw-semibold p-3">$13.5  <strike class="text-secondary fs-4">$18</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <span class="fs-4 fw-semibold p-3">$13  <strike class="text-secondary fs-4">$18</strike></span>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Crushed Tomatoes', 13 ,'./images/tomato.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
 
               <!--12-->
               <div class="col">
-                <div class="card mt-3" style="width: 18rem;">
+                <div class="card mt-3 product" style="width: 18rem;">
                     <img src="./images/pineapple.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h6 class="text-secondary">Fruits & Vegetables</h6>
@@ -317,7 +315,7 @@
                         <i class="fa-solid fa-star-half"></i>
                     <span class="text-secondary fw-semibold">4.3  (4)</span></p>
                     <span class="fs-4 fw-semibold p-3">$14.5  <strike class="text-secondary fs-4">$18</strike></span>
-                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart()">+ ADD</button>
+                    <button class="float-end fw-bold btn btn-success add-to-cart-btn addToCartBtn" onclick="addToCart('Product 12', 15 ,'./images/pineapple.jpg' )">+ ADD</button>
                     </div>
                   </div>
               </div>
