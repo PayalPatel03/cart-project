@@ -20,4 +20,12 @@ if (toastTrigger) {
       });
   });
 
-  
+  //badge
+  let cartCount = 0;
+
+function addToCart() {
+  cartCount++;
+  const badge = document.getElementById("cart-badge");
+  badge.textContent = cartCount;
+  badge.style.display = "inline-block";
+}

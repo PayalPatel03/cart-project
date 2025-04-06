@@ -91,3 +91,32 @@ footer {
 strong i{
     color: #0aad0a;
 }
+
+/*badge*/
+.cart-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .add-to-cart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 50%;
+    display: none; /* Hidden when count is 0 */
+  }
+  
