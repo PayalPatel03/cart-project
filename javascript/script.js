@@ -20,22 +20,6 @@ if (toastTrigger) {
       });
   });
 
-  //badge
-  let cartCount = 0;
-
-  function addToCart() {
-    cartCount++;
-    const badge = document.getElementById("cart-badge");
-    badge.textContent = cartCount;
-    badge.style.display = "inline-block";
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const badge = document.getElementById("cart-badge");
-    badge.style.display = "none";
-  });
-
-
 //start
 let cart = [];
 
@@ -48,7 +32,7 @@ window.onload = function () {
 };
 
 function addToCart(name, price, image) {
-  // Check if product already in cart
+ 
   const existingProduct = cart.find(item => item.name === name);
   if (existingProduct) {
     existingProduct.quantity += 1;
@@ -61,7 +45,7 @@ function addToCart(name, price, image) {
 }
 
 function updateCartDisplay() {
-  document.getElementById('cart-badge').innerText = cart.length;
+  // document.getElementById('cart-badge').innerText = cart.length;
 
   const cartList = document.getElementById('cart-list');
   cartList.innerHTML = '';
@@ -90,7 +74,7 @@ function updateCartDisplay() {
   });
 
 
-  // Add total and checkout button
+
   const totalDiv = document.createElement('div');
   totalDiv.classList.add('cart-total', 'border-top', 'pt-3', 'mt-3');
   totalDiv.innerHTML = `
@@ -129,7 +113,7 @@ function addCartEventListeners() {
       if (cart[index].quantity > 1) {
         cart[index].quantity -= 1;
       } else {
-        cart.splice(index, 1); // Remove if quantity becomes 0
+        cart.splice(index, 1); 
       }
       updateCartDisplay();
     });
